@@ -12,35 +12,64 @@
 
 <body>
 
-    <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-
+    
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/logo.png"
-                     width="42"
-                     class="logo-img">
-
+                <img src="assets/logo.png" width="42" class="logo-img">
+    
                 <span class="brand-text ms-2">
                     Stock Market Tracker
                 </span>
             </a>
-
-            <div class="navbar-nav ms-auto nav-links">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="news.html">News</a>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="pro.html">Pro</a>
-                <a id="auth-link" class="nav-link login-link" href="login.html">
-                    Login
-                </a>
+        
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+    
+                <span class="navbar-toggler-icon"></span>
+    
+            </button>
+        
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarMenu">
+    
+                <div class="navbar-nav nav-links">
+    
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+    
+                    <a class="nav-link" href="news.html">
+                        News
+                    </a>
+    
+                    <a class="nav-link" href="portfolio.html">
+                        Portfolio
+                    </a>
+    
+                    <a class="nav-link" href="pro.html">
+                        Pro
+                    </a>
+    
+                    <a
+                        id="auth-link"
+                        class="nav-link login-link"
+                        href="login.html">
+    
+                        Login
+    
+                    </a>
+    
+                </div>
+    
             </div>
-
+    
         </div>
     </nav>
-
-    <!-- Company Header -->
 
     <section class="company-header">
 
@@ -103,13 +132,9 @@
 
     </section>
 
-    <!-- Chart + Watchlist -->
-
     <section class="container my-5">
 
         <div class="row g-4">
-
-            <!-- Chart -->
 
             <div class="col-lg-8">
 
@@ -165,8 +190,6 @@
 
             </div>
 
-            <!-- Watchlist -->
-
             <div class="col-lg-4">
 
                 <div class="dashboard-card">
@@ -206,8 +229,6 @@
         </div>
 
     </section>
-
-    <!-- Statistics -->
 
     <section class="container my-5">
 
@@ -269,8 +290,6 @@
 
     </section>
 
-    <!-- News -->
-
     <section class="container my-5">
 
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -288,8 +307,6 @@
         <div id="news-container" class="row g-4"></div>
 
     </section>
-
-    <!-- Footer -->
 
     <footer class="custom-footer">
 
@@ -344,6 +361,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/stock-details.js"></script>
     <script src="js/auth.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

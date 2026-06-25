@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/portfolio.cssp">
+    <link rel="stylesheet" href="css/portfolio.css">
     <title>Portfolio</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -13,25 +13,56 @@
         <div class="container">
     
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img
-                    src="assets/logo.png"
-                    alt="Logo"
-                    width="42"
-                    class="logo-img">
+                <img src="assets/logo.png" width="42" class="logo-img">
     
                 <span class="brand-text ms-2">
                     Stock Market Tracker
                 </span>
             </a>
     
-            <div class="navbar-nav ms-auto nav-links">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="news.html">News</a>
-                <a class="nav-link active-nav" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="pro.html">Pro</a>
-                <a id="auth-link" class="nav-link login-link" href="login.html">
-                    Login
-                </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+    
+                <span class="navbar-toggler-icon"></span>
+    
+            </button>
+        
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarMenu">
+    
+                <div class="navbar-nav nav-links">
+    
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+    
+                    <a class="nav-link" href="news.html">
+                        News
+                    </a>
+    
+                    <a class="nav-link active-nav" href="portfolio.html">
+                        Portfolio
+                    </a>
+    
+                    <a class="nav-link" href="pro.html">
+                        Pro
+                    </a>
+    
+                    <a
+                        id="auth-link"
+                        class="nav-link login-link"
+                        href="login.html">
+    
+                        Login
+    
+                    </a>
+    
+                </div>
+    
             </div>
     
         </div>
@@ -83,7 +114,9 @@
     
         <div class="portfolio-table">
 
-        <table class="table table-striped mt-4">
+            <div class="table-responsive">
+            
+            <table class="table portfolio-data-table align-middle">
             <thead>
                 <tr>
                     <th>Stock</th>
@@ -99,6 +132,7 @@
             </tbody>
         </table>
         </div>
+        </div>
 
         <div class="portfolio-form mt-4">
             <h4>
@@ -109,14 +143,14 @@
             </p>
         
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 mb-2">
                     <input
                         id="symbol-input"
                         class="form-control"
                         placeholder="AAPL">
                 </div>
         
-                <div class="col-md-5">
+                <div class="col-md-5 mb-2">
                     <input
                         id="shares-input"
                         type="number"
@@ -125,7 +159,7 @@
                         placeholder="Shares">
                 </div>
         
-                <div class="col-md-2">
+                <div class="col-md-2 mb-2">
                     <button
                         id="add-stock-btn"
                         class="btn btn-primary w-100">
@@ -188,5 +222,6 @@
 
     <script src="js/portfolio.js"></script>
     <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

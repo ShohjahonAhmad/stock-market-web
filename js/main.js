@@ -10,7 +10,7 @@ stocks.forEach((symbol) => {
     .then((data) => {
       const color = data.dp >= 0 ? "text-success" : "text-danger";
       container.innerHTML += `
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card p-3">
                         <h5>${symbol}</h5>
                         <p>$${data.c}</p>
@@ -118,7 +118,7 @@ fetch(`https://finnhub.io/api/v1/news?category=general&token=${API_KEY}`)
   .then((news) => {
     news.slice(0, 3).forEach((article) => {
       homeNews.innerHTML += `
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card h-100">
 
             <img
