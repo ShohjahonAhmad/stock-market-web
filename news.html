@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+    <title>News</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+    
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img
+                    src="assets/logo.png"
+                    alt="Logo"
+                    width="42"
+                    class="logo-img">
+    
+                <span class="brand-text ms-2">
+                    Stock Market Tracker
+                </span>
+            </a>
+    
+            <div class="navbar-nav ms-auto nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active-nav" href="news.html">News</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="pro.html">Pro</a>
+                <a id="auth-link" class="nav-link login-link" href="login.html">
+                    Login
+                </a>
+            </div>
+    
+        </div>
+    </nav>
+
+    <section class="news-hero">
+        <div class="container text-center">
+    
+            <span class="news-badge">
+                Financial News
+            </span>
+    
+            <h1 class="news-title">
+                Stay Updated With The Markets
+            </h1>
+    
+            <p class="news-subtitle">
+                Read the latest headlines covering stocks, companies,
+                market trends and global financial events.
+            </p>
+    
+        </div>
+    </section>
+    
+    <section class="container news-section">
+    
+        <div class="d-flex justify-content-between align-items-center mb-4">
+    
+            <div>
+                <h2 class="news-heading">
+                    Latest Headlines
+                </h2>
+    
+                <p class="news-description">
+                    Powered by Finnhub API
+                </p>
+            </div>
+    
+        </div>
+    
+        <div id="news-container" class="row g-4"></div>
+    
+    </section>
+
+    <footer class="custom-footer mt-auto">
+        <div class="container">
+    
+            <div class="footer-content">
+    
+                <div class="footer-brand">
+                    <img
+                        src="assets/logo.png"
+                        alt="Logo"
+                        width="42">
+    
+                    <div>
+                        <h5>Stock Market Tracker</h5>
+                        <p>
+                            Track stocks, manage your portfolio,
+                            and stay informed.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="news.html">News</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="pro.html">Pro</a>
+                </div>
+    
+            </div>
+    
+            <hr>
+    
+            <div class="footer-bottom">
+    
+                <span>
+                    © 2026 Stock Market Tracker. All rights reserved.
+                </span>
+    
+                <span>
+                    Powered by Finnhub API
+                </span>
+    
+            </div>
+    
+        </div>
+    </footer>
+
+    <script src="js/news.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

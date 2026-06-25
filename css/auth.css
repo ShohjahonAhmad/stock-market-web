@@ -1,0 +1,222 @@
+/* ==========================================================
+   AUTH PAGE
+========================================================== */
+
+.auth-page {
+    background: linear-gradient(135deg, #f4f7fb 0%, #eef4ff 100%);
+    padding: 70px 0;
+}
+
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
+
+.auth-info {
+    color: #0f172a;
+}
+
+.auth-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: .85rem;
+    margin-bottom: 25px;
+}
+
+.auth-info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.auth-info p {
+    color: #64748b;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.feature-item {
+    background: white;
+    padding: 18px 22px;
+    border-radius: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, .06);
+    transition: .25s;
+}
+
+.feature-item:hover {
+    transform: translateX(8px);
+}
+
+/* ==========================================================
+   LOGIN CARD
+========================================================== */
+
+.auth-card {
+    background: white;
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, .08);
+    border: 1px solid #edf2f7;
+}
+
+.auth-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.auth-card h2 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.auth-card .text-muted {
+    color: #64748b !important;
+    margin-bottom: 0;
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.auth-input {
+    border-radius: 14px;
+    border: 1px solid #dbe4ef;
+    padding: 14px 16px;
+    transition: .25s;
+    font-size: .97rem;
+}
+
+.auth-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.15);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.auth-btn {
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 14px;
+    transition: .25s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(13,110,253,.25);
+}
+
+.auth-secondary-btn {
+    padding: 13px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.auth-secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.divider span {
+    position: relative;
+    background: white;
+    padding: 0 18px;
+    color: #94a3b8;
+    font-size: .9rem;
+}
+
+/* ==========================================================
+   TERMS
+========================================================== */
+
+.terms-text {
+    margin-top: 25px;
+    font-size: .85rem;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ==========================================================
+   ALERT
+========================================================== */
+
+#login-message {
+    border-radius: 14px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .auth-page {
+        padding: 50px 0;
+    }
+
+    .auth-card {
+        padding: 35px 28px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .auth-card {
+        border-radius: 18px;
+        padding: 28px 22px;
+    }
+
+    .auth-logo {
+        width: 60px;
+    }
+
+    .auth-card h2 {
+        font-size: 1.7rem;
+    }
+
+}
