@@ -1,4 +1,4 @@
-# 📈 Stock Market Tracker
+# Stock Market Tracker
 
 A responsive web application for tracking stock market data, viewing company information, managing a personal portfolio, and staying updated with the latest financial news.
 

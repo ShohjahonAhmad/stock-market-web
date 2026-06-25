@@ -2,8 +2,6 @@ if (localStorage.getItem("token")) {
   window.location.href = "portfolio.html";
 }
 
-console.log(localStorage.getItem("token"));
-
 const form = document.getElementById("login-form");
 const messageElement = document.getElementById("login-message");
 
