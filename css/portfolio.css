@@ -1,0 +1,48 @@
+.portfolio-header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:60px 0;
+}
+
+.portfolio-summary,
+.portfolio-table,
+.portfolio-form{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+}
+
+.portfolio-summary{
+    margin-bottom:30px;
+}
+
+.portfolio-summary small{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#64748b;
+}
+
+.portfolio-summary h2{
+    margin-top:10px;
+    font-size:2.5rem;
+    font-weight:700;
+    color:#0d6efd;
+}
+
+.portfolio-table table{
+    margin-bottom:0;
+}
+
+.portfolio-form h4{
+    font-weight:700;
+}
+
+.portfolio-form input{
+    border-radius:12px;
+}
+
+.portfolio-form button{
+    border-radius:12px;
+    height:100%;
+}
